@@ -1,0 +1,16 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sander_Wholesaler::wholesaler" title="Wholesaler" translate="title"
+             module="Sander_Wholesaler" sortOrder="50" dependsOnModule="Sander_Wholesaler"
+             resource="Sander_Wholesaler::wholesaler"/>
+        <add id="Sander_Wholesaler::wholesaler_page" title="Page" translate="title"
+             module="Sander_Wholesaler" parent="Sander_Wholesaler::wholesaler" sortOrder="10"
+             dependsOnModule="Sander_Wholesaler"
+             action="salerpage/page/index" resource="Sander_Wholesaler::wholesaler"/>
+        <add id="Sander_Wholesaler::wholesaler_config" title="Settings" translate="title"
+             module="Sander_Wholesaler" parent="Sander_Wholesaler::wholesaler" sortOrder="10"
+             dependsOnModule="Sander_Wholesaler"
+             action="admin/system_config/edit/section/settings" resource="Sander_Wholesaler::wholesaler"/>
+    </menu>
+</config>
